@@ -8,9 +8,6 @@ export default {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Смотреть Рекламу</title>
     
-    <!-- ПОДКЛЮЧЕНИЕ MONETAG (Замениxxxxx на свой ID зоны позже) -->
-    <!-- <script src="https://alwingulla.com/act/files/tag.min.js?z=xxxxxxx" data-zone="xxxxxxx" async defer></script> -->
-
     <style>
         * {
             box-sizing: border-box;
@@ -30,13 +27,27 @@ export default {
         }
 
         .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
             padding: 20px;
             width: 100%;
             max-width: 400px;
         }
 
-        /* Красивая кнопка по центру */
+        /* Стили для твоей фотографии */
+        .promo-image {
+            width: 100%;
+            max-width: 280px; /* Ограничил максимальную ширину, чтобы смотрелось аккуратно */
+            height: auto;
+            border-radius: 20px; /* Скругленные углы для красоты */
+            margin-bottom: 24px; /* Отступ снизу до кнопки */
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Легкая тень под фото */
+        }
+
+        /* Красивая кнопка */
         .ad-button {
             background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
             border: none;
@@ -61,6 +72,8 @@ export default {
 <body>
 
     <div class="container">
+        <img src="https://iimg.su/i/ZHPfYZ" alt="Promo" class="promo-image">
+
         <button class="ad-button" id="watchAdBtn">
             Смотреть рекламу
         </button>
@@ -72,10 +85,8 @@ export default {
         button.addEventListener('click', () => {
             console.log('Клик по кнопке рекламы');
             
-            // Логика вызова рекламы Monetag (In-App Request)
             if (typeof show_xxxxx === 'function') { 
-                // Вместо xxxxx будет функция твоей зоны, когда вставишь скрипт
-                // show_xxxxx().then(() => { ... });
+                // Логика Monetag
             } else {
                 alert('Реклама загружается или скрипт Monetag еще не подключен!');
             }
