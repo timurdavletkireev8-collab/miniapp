@@ -1,0 +1,9 @@
+name = "bot"
+main = "worker.js"
+compatibility_date = "2024-09-23"
+
+
+[[d1_databases]]
+binding = "DB"
+database_name = "bot"
+database_id = "0d2bbaff-b01a-40a2-b141-75d50e961ead"
