@@ -39,7 +39,7 @@ export default {
     </style>
 </head>
 <body>
-    <img src="https://iimg.su/i/ZHPfYZ" alt="Promo" class="promo-image">
+    <img src="https://i.postimg.cc/NjYkYpjC/photo-2026-06-10-08-57-02.jpg" alt="Promo" class="promo-image">
     
     <div class="container">
         <button class="ad-button" id="watchAdBtn">Смотреть рекламу</button>
